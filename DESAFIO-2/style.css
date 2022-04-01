@@ -1,0 +1,151 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+}
+
+.faixa {
+    background-color: #181818;
+    color: white;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.faixa p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+}
+
+.menu {
+    background-color: white;
+    color: #181818;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.menu p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    margin: auto;
+}
+
+.banner {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(./assets/banner.png);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    width: 100vw;
+    height: 378px;
+    display: flex;
+    align-items: center;
+    color:#F9F9F9;
+}
+
+.text {
+    width: 30%;
+    margin: 0 5em;
+}
+
+.banner h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #F9F9F9;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    text-align:left;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-family: 'Montserrat', sans-serif;
+    color: #F9F9F9;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 35px;
+    text-align: left;
+}
+
+main h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 63px;
+    text-align: center;
+    margin: auto;
+    margin-top: 58px;
+    color: #181818;
+}
+
+main p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 35px;
+    text-align: center;
+    margin: auto;
+    color: #474747;
+    margin-bottom: 59px;
+}
+
+.produto {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    margin: auto;
+}
+
+.produto div {
+    width: 300px;
+    height: 300px;
+    background-color: #EBE9EA;
+    margin: 15px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    background-color: #181818;
+    height: 60px;
+    width: 100%;
+    color: #f9f9f9; 
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 35px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 414px) {
+    .text {
+        width: 1000%;
+        margin: 0 2em;
+    }
+    
+    .banner h1 {
+        font-size: 28px;
+    }
+    
+    .banner p {
+        font-size: 16px;
+    }
+
+    footer {
+        margin-top: 50px;
+    }
+}

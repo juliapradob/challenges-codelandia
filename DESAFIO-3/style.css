@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #D7D4FF;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 560px;
+}
+
+.headerTextos {
+    margin-right: 100px;
+    width: 500px;
+}
+
+.headerTextos h1 {
+    font-family: 'Merriweather', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 47px;
+    margin-bottom: 17,5px;
+}
+
+.headerTextos p {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 32px;
+    margin-bottom: 35px;
+}
+
+#headerBotao {
+    background-color: #6C63FF;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
+    border: 0px solid transparent;
+    border-radius: 5px; 
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    padding: 8px 48px;
+}    
+
+.header img {
+    max-width: 500px;
+}
+
+.container {
+    background-color: #f9f9f9;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 68px 68px;
+    padding: 96px 0;
+}
+
+.card {
+    width: 340px;
+    height: 424px;
+    background-color: white;
+}
+
+.cardCor {
+    width: 100%;
+    height: 224px;
+}
+
+.vermelho {
+    background-color: #FF6363;
+}
+
+.aqua {
+    background-color: #63ECFF;
+}
+
+.rosa {
+    background-color: #F363FF;
+}
+
+.verde {
+    background-color: #63FF73;
+}
+
+.amarelo {
+    background-color: #FFDD63;
+}
+
+.roxo {
+    background-color: #6663FF;
+}
+
+.card h1 {
+    font-family: 'Merriweather', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    margin: 24px 0px 8px 30px;
+}
+
+.card p {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    margin: 24px 30px 30px 30px;
+}
+
+.form {
+    width: 100%;
+    height: 750px;
+    background-color: #D7D5FF;
+}
+
+.form h1 {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    padding-top: 86px;
+    margin-bottom: 56px;
+}
+
+.formCampos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formCampos input {
+    color: black;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    padding-left: 16px;
+}
+
+.fino {
+    background-color: white;
+    border: 0px solid transparent;
+    border-radius: 8px;
+    height: 65px;
+    width: 470px;
+    margin: 8px 0;
+}
+
+.largo {
+    background-color: white;
+    border: 0px solid transparent;
+    border-radius: 8px;
+    height: 165px;
+    width: 470px;
+    margin: 8px 0;
+    padding-left: 16px;
+}
+
+#formBotao {
+    width: 487px;
+    height: 50px;
+    background-color: #6C63FF;
+    border-radius: 5px;
+    border: 0 solid transparent;
+    margin-top: 22px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+}
+
+textarea {
+    padding-top: 22px;
+    padding-left: 16px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.fino::placeholder {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(110, 114, 117, 0.74);
+}
+
+.largo::placeholder {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(110, 114, 117, 0.74);
+    vertical-align: top;
+}
+
+@media (max-width: 460px) {
+    .header {
+        background-color: #D7D4FF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 800px;
+    }
+
+    .headerTextos {
+        margin-left: 10%;
+        width: 80%;
+    }
+
+    .header img {
+        max-width: 90%;
+        margin-top: 80px;
+    }
+
+    .formCampos input {
+        width: 80%;
+        padding-left: 16px;
+    }
+
+    .formCampos textarea {
+        width: 80%;
+        padding-left: 16px;
+    }
+
+    #formBotao {
+        width: 84%;
+    }
+}

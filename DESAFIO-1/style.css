@@ -1,0 +1,212 @@
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f3f5f7;
+
+}
+
+header {
+    font-family: 'Lexend Deca', sans-serif;
+    width: 100vw;
+    height: 250px;
+    background-image: linear-gradient(to right, #574AE8, #3EA1DB);
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    line-height: 30px;
+
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 270px 0px 270px;
+}
+
+.busca {
+    font-family: 'Inter', sans-serif;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    margin: 73px 270px 40px 270px;
+    height: 65px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.busca img {
+    width: 28px;
+    height: 28px;
+    margin: 0 20px;
+}
+
+.busca input {
+    background: transparent;
+    border: 0px solid transparent;
+    height: 22px;
+    width: 100% 
+}
+
+.busca ::placeholder {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    opacity: 0.5;
+}
+
+.post {
+    background: white;
+    margin: 50px 270px;
+}
+
+.infos {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 22px;
+}
+
+.data {
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #717171;
+    padding-top: 22px;
+}
+
+.post img {
+    width: 22px;
+    height: 20px;
+    padding-top: 22px;
+}
+
+.title {
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 32px;
+    margin: 0px 22px;
+    padding-top: 8px;
+}
+
+.texto {
+    font-family: 'Lexend Deca';
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0px 22px;
+    padding: 8px 0 22px 0;
+}
+
+/*Responsivo mobile*/  
+
+@media screen and (max-device-width: 414px) {
+    header {
+        font-family: 'Lexend Deca', sans-serif;
+        height: 200px;
+        background-image: linear-gradient(to right, #574AE8, #3EA1DB);
+    }
+
+    header a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        line-height: 22px;
+    
+    }
+    
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 40px 20px 0px 20px;
+    }
+    
+    .busca {
+        font-family: 'Inter', sans-serif;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 5px;
+        margin: 40px 20px 48px 20px;
+        height: 40px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .busca img {
+        width: 15px;
+        height: 15px;
+        margin: 0 10px;
+    }
+    
+    .busca input {
+        background: transparent;
+        border: 0px solid transparent;
+        height: 18px;
+        width: 90% 
+    }
+    
+    .busca ::placeholder {
+        color: white;
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        line-height: 28px;
+        opacity: 0.5;
+    }
+    
+    .post {
+        background: white;
+        margin: 50px 20px;
+    }
+    
+    .infos {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 16px;
+    }
+    
+    .data {
+        font-family: 'Lexend Deca';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        color: #717171;
+        padding-top: 16px;
+    }
+    
+    .post img {
+        width: 20px;
+        height: 17px;
+        padding-top: 16px;
+    }
+    
+    .title {
+        font-family: 'Lexend Deca';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        margin: 0px 16px;
+        padding-top: 8px;
+    }
+    
+    .texto {
+        font-family: 'Lexend Deca';
+        font-weight: 200;
+        font-size: 14px;
+        line-height: 26px;
+        margin: 0px 16px;
+        padding: 8px 0 16px 0;
+    }
+}

@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.containerImagem {
+    background-color: #F7FAFC;
+    width: 50%; 
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerLogin {
+    background-color: white;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginTitulos {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.containerLogin h2 {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #1A202C;
+    margin-bottom: 8px;
+}
+
+.containerLogin h1 {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 33px;
+    color: #1A202C;
+    margin-bottom: 40px;
+}
+
+.loginCampos {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.loginCampos {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #1A202C;
+}
+
+.loginCampos label {
+    margin-bottom: 10px;
+}
+
+.loginCampos input {
+    height: 50px;
+    padding-left: 16px;
+    margin-bottom: 10px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #1A202C;
+    border: 1px solid #E8E8E8;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.loginAjuda {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 50%;
+    margin: 10px 0;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: none;
+}
+
+.lembre {
+    color: #1A202C;
+}
+
+.esqueceu {
+    color: #2B6CB0;
+    text-align: end;
+}
+
+.loginAjuda label {
+    display: block;
+    position: relative;
+    padding-left: 24px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.loginAjuda input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.loginAjuda .checkmark {
+    height: 14px;
+    width: 14px;
+    background-color: #f7fafc;
+    border: 1px solid #e8e8e8;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.loginAjuda input:checked ~ .checkmark {
+    background-color: #f7fafc;
+}
+
+.loginAjuda .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 2px;
+    top: 2px;
+    width: 10px;
+    height: 10px;
+    background-color: #2B6CB0;
+    border-radius: 50%;
+}
+
+.loginAjuda input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.loginAjuda .esqueceu {
+    display: inline;
+    align-items: flex-end;
+}
+
+.loginBotoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.loginEntrar {
+    width: 50%;
+    height: 50px;
+    background-color: #04c35c;
+    border: 0px;
+    border-radius: 5px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    cursor:pointer;
+    margin-bottom: 16px;
+}
+
+.loginSocial {
+    width: 50%;
+    height: 50px;
+    background-color: #1A202C;
+    border: 0px;
+    border-radius: 5px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    cursor:pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginSocial img {
+    width: 100%;
+    max-width: 20px;
+    padding-right: 5px;
+}
+
+.loginSocial button {
+    padding-bottom: 10px;
+}
+
+.loginCadastro p {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 40px auto 0 auto;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #1A202C;
+}
+
+.loginCadastro span {
+    color: #2B6CB0;
+}
+
+@media (max-width: 414px) {
+    .container {
+        display: block;
+    }
+
+    .containerImagem {
+        display: none;
+    }
+
+    .containerLogin {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .loginTitulos, .loginCampos, .loginAjuda, .loginBotoes  {
+        width: 80%;
+    }
+
+    .loginEntrar, .loginSocial {
+        width: 100%;
+    }
+}
