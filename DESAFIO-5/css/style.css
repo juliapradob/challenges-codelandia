@@ -1,0 +1,102 @@
+body {
+    font-family: 'Poppins';
+    background-image: linear-gradient(to right, #628e75, #1a4855);
+    height: 100%;
+    max-height: 720px;
+
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px auto;
+    padding: 0 164px;
+}
+
+.menu logo {
+    width: 100%;
+    max-width: 100px;
+}
+
+.menu .social img {
+    width: 100%;
+    max-width: 24px;
+    margin-left: 15px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+    padding: 0 164px;
+}
+
+.textos {
+    width: 100%;
+    max-width: 450px;
+}
+
+.textos h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #F9F9F9;
+}
+
+.textos h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 68px;
+    line-height: 109%;
+    color: #F9F9F9;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 14px 0px;
+    max-width: 435px;
+}
+
+.textos p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%;
+    color: #F9F9F9;
+}
+
+.botoes button {
+    margin-top: 48px;
+    font-family: 'Poppins';
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 180%;
+    text-transform: uppercase;
+    color: #F9F9F9;
+    width: 100%;
+    max-width: 222px;
+    height: 45px;
+    padding: 0 16px;
+    border: 2px solid #658E76;
+    clip-path: polygon(20px 0%, 100% 0%, calc(100% - 20px) 100%, 0% 100%);
+}
+
+.botaoAssistir {
+    background-color: #658E76;
+}
+
+.botaoTrailer {
+    background-color: transparent;
+}
+
+
+.imagem {
+    width: 100%;
+    max-width: 500px;
+}
