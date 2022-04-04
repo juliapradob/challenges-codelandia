@@ -1,0 +1,147 @@
+body {
+    width: 100%;
+    max-width: 1920px;
+    background-image: url(/DESAFIO-6/assets/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: brightness(30%);
+    height: 100vh;
+    color: white;
+    font-family: 'B612', sans-serif;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 45px;
+    margin-bottom: 6%
+}
+
+.title h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.title h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 117px;
+    text-transform: uppercase;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10%;
+    gap: 70px;
+}
+
+.container img {
+    width: 184px;
+    height: 267px;
+    border-radius: 20px;
+}
+
+.containerInfos {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.containerInfos--sinopse {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    width: 100%;
+    max-width: 722px;
+    margin-bottom: 4%;
+}
+
+.containerInfos--icones {
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 44px;
+}
+
+.containerInfos--tempo {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.containerInfos--tempo p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.containerInfos--ano p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.containerInfos--estrelas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.containerInfos--estrelas i {
+    color: #ffa800;
+}   
+
+.containerInfos--estrelas i:nth-child(5) {
+    color: white;
+    opacity: 0.3;
+}   
+
+.containerInfos--botoes {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.botaoAssistir button {
+    padding: 15px 27px;
+    width: 184px;
+    height: 52px;
+    background-color: #0072D2;
+    border-radius: 3px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    cursor: pointer;
+}
+
+.botaoTrailer button {
+    padding: 15px 27px;
+    width: 184px;
+    height: 52px;
+    background-color: #181818;
+    border: 1px solid #FFFFFF;    
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    cursor: pointer;
+}
