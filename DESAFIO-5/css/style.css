@@ -1,6 +1,10 @@
 body {
     font-family: 'Poppins';
     background-image: linear-gradient(to bottom, #628e75, #1a4855);
+    background-position: center;
+    background-size: cover;
+    background-origin: content-box;
+    background-attachment: fixed;
 }
 
 .menu {
@@ -24,12 +28,11 @@ body {
 
 .container {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    margin: 40px auto;
+    margin: 40px auto 0 auto;
     padding: 0 164px;
-    height: 100%;
-    min-height: 693px;
 }
 
 .textos {
@@ -48,7 +51,6 @@ body {
 }
 
 .textos h1 {
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 900;
     font-size: 68px;
@@ -119,4 +121,69 @@ body {
 .imagem {
     width: 100%;
     max-width: 500px;
+}
+
+@media (max-width: 414px) {
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 14px 0px 0px 0px;
+        padding: 0 24px;   
+    }
+
+    .menu .social img {
+        width: 100%;
+        max-width: 16px;
+        margin-left: 15px;
+    }
+
+    .container {
+        display: block;
+        width: 100%;
+        max-width: 414px;
+        padding: 0 25px;
+        margin-top: 0;
+        height: 100%;
+        max-height: 600px;
+    }
+
+    .container .imagem {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container .imagem img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .textos {
+        width: 100%;
+        max-width: 362px;
+    }
+
+    .textos h2 {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .textos h1 {
+        font-size: 56px;
+        margin: 14px 0px;
+        max-width: 362px;
+    }
+
+    .textos p {
+        font-size: 14px;
+    }
+
+    .botoes {
+        display: inline;
+    }
+
+    .botoes .botaoTrailer {
+        display: none;
+    }
 }
