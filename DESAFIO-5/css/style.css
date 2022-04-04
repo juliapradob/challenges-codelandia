@@ -1,9 +1,6 @@
 body {
     font-family: 'Poppins';
-    background-image: linear-gradient(to right, #628e75, #1a4855);
-    height: 100%;
-    max-height: 720px;
-
+    background-image: linear-gradient(to bottom, #628e75, #1a4855);
 }
 
 .menu {
@@ -28,8 +25,11 @@ body {
 .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 40px auto;
     padding: 0 164px;
+    height: 100%;
+    min-height: 693px;
 }
 
 .textos {
@@ -69,32 +69,52 @@ body {
     color: #F9F9F9;
 }
 
+.botoes {
+    display: flex;
+    justify-content: space-between;
+}
+
 .botoes button {
+    transform: skew(-15deg);
+    position: relative;
+    width: 220px;
     margin-top: 48px;
+    height: 45px;
+    padding: 0 16px;
+    border: 2px solid #658E76;
+}
+
+.botoes .botaoAssistir {
+    background-color: #658E76;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botoes .botaoTrailer {
+    background-color: transparent;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botoes button a {
+    position: absolute;
+    transform: skew(15deg);
     font-family: 'Poppins';
     cursor: pointer;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 180%;
-    text-transform: uppercase;
     color: #F9F9F9;
-    width: 100%;
-    max-width: 222px;
-    height: 45px;
-    padding: 0 16px;
-    border: 2px solid #658E76;
-    clip-path: polygon(20px 0%, 100% 0%, calc(100% - 20px) 100%, 0% 100%);
+    text-decoration: none;
 }
 
-.botaoAssistir {
-    background-color: #658E76;
+.botoes button i {
+    margin-right: 1em;
+    color: #F9F9F9;
 }
-
-.botaoTrailer {
-    background-color: transparent;
-}
-
 
 .imagem {
     width: 100%;
