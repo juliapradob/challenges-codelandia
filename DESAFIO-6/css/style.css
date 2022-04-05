@@ -39,14 +39,17 @@ body {
 .container {
     display: flex;
     justify-content: center;
-    /*align-items: center;*/
     margin: 0 10%;
     gap: 70px;
 }
 
-.container img {
-    width: 184px;
-    height: 267px;
+.containerInfos--imagem {
+    width: 100%;
+    max-width: 184px;
+}
+
+.containerInfos--imagem img {
+    width: 100%;
     border-radius: 20px;
 }
 
