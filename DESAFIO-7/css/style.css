@@ -105,7 +105,7 @@ body {
 
 .containerMain--direita {
     display: flex;
-    width: 100%;
-    max-width: 592px;
+    height: 100vh;
+    max-width: 570px;
     align-self: flex-end;
 }
